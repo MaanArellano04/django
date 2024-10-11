@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krusada Project Overview</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .hero {
+            background: url("{% static 'bg.jpg' %}") no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+        .hero h1,
+        .hero p {
+            position: relative;
+            z-index: 2; /* Ensure text is above the overlay */
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero p {
+            z-index: 1;
+            font-size: 1.5rem;
+        }
+        .card {
+            margin: 20px 0;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .icon {
+            font-size: 2rem;
+            color: #007bff;
+        }
+        .section-title {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4">Krusada Project</h1>
+            <p class="lead">Merging Art with the Word of God</p>
+        </div>
+    </header>
+
+    <div class="d-flex align-items-center justify-content-center flex-row">
+        <a href="/krusada/wawa" class="btn btn-primary mx-5 mt-3">Products</a>
+        <a href="/krusada/yaya" class="btn btn-primary mx-5 mt-3">Wallpaper</a>
+        <a href="/krusada/jaja" class="btn btn-primary mx-5 mt-3">About</a>
+    </div>
+
+    <div class="container mt-1">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="section-title">Overview <i class="fas fa-info-circle icon"></i></h2>
+                <ul class="list-unstyled">
+                    <li><strong>Founder:</strong> Arjeigh Ramos</li>
+                    <li><strong>Established:</strong> December 2021</li>
+                    <li><strong>Location:</strong> Roxas, Calapan City, Oriental Mindoro</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="section-title">Mission <i class="fas fa-bullseye icon"></i></h2>
+                <p>The Krusada Project is dedicated to merging art with the Word of God, aiming to create meaningful connections between faith and creativity. Arjeigh’s vision is to produce artwork that resonates deeply with individuals, fostering a sense of spiritual reflection and inspiration.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="section-title">Product Range <i class="fas fa-shopping-cart icon"></i></h2>
+                <ul class="list-unstyled">
+                    <li><strong>Tsuno Bags:</strong> Stylish and functional bags that are not only practical but also carry messages of faith and purpose.</li>
+                    <li><strong>Keychains:</strong> Thoughtfully designed keychains that serve as daily reminders of one's connection to God.</li>
+                    <li><strong>Shirts:</strong> Fashionable apparel featuring designs that communicate powerful biblical messages and themes.</li>
+                    <li><strong>Stickers:</strong> Vibrant stickers that can be used to personalize belongings while spreading messages of hope and faith.</li>
+                    <li><strong>Other Artwork:</strong> Unique pieces that incorporate various artistic styles and mediums, all centered around themes of spirituality and devotion.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="section-title">Artistic Vision <i class="fas fa-paint-brush icon"></i></h2>
+                <p>Each creation is inspired by Arjeigh's personal journey with the Lord, making the art not just a product but a reflection of his faith. The designs often draw from scripture, incorporating verses and spiritual motifs that speak to the heart and soul. This approach allows customers to connect with the artwork on a personal level, seeing it as both an aesthetic choice and a source of inspiration.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="section-title">Community Engagement <i class="fas fa-users icon"></i></h2>
+                <p>The Krusada Project emphasizes building a community of believers who appreciate the intersection of art and faith. Arjeigh aims to engage with customers through workshops, events, and social media, creating spaces for dialogue and connection around shared values and beliefs.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="section-title">Purpose <i class="fas fa-lightbulb icon"></i></h2>
+                <p>The Krusada Project seeks to inspire and encourage individuals through art that conveys profound messages of faith. By sharing his work, Arjeigh hopes to spark conversations about spirituality, cultivate a deeper understanding of one’s relationship with God, and encourage others on their personal journeys of faith. Each product serves as a reminder that art can be a powerful vehicle for expressing and celebrating one’s beliefs.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 Krusada Project | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

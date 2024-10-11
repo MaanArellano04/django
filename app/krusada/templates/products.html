@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krusada Project Products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('https://www.transparenttextures.com/patterns/white-paper.png') repeat;
+            color: #333;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        h1 {
+            color: #0056b3;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        .product-card {
+            margin: 20px 0;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            background-color: #f8f9fa;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            font-size: 1.25rem;
+            color: #007bff;
+        }
+        .card-text {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">Krusada Project Products</h1>
+    <div class="d-flex align-items-center justify-content-center flex-row">
+        <a href="/krusada/wawa" class="btn btn-primary mx-5">Products</a>
+        <a href="/krusada/yaya" class="btn btn-primary mx-5">Wallpaper</a>
+        <a href="/krusada/jaja" class="btn btn-primary mx-5">About</a>
+    </div>
+    <div class="row">
+        <!-- Product Card 1 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="{% static 'tsuno2.jpg' %}" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Tsuno Bag</h5>
+                    <p class="card-text">Stylish and functional bag that carries messages of faith and purpose.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="{% static 'tsuno2.jpg' %}" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Keychain</h5>
+                    <p class="card-text">Thoughtfully designed keychain that serves as a daily reminder of faith.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="{% static 'shirt1.jpg' %}" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h5 class="card-title">Faith T-Shirt</h5>
+                    <p class="card-text">Fashionable apparel featuring powerful biblical messages.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="{% static 'shirt2.jpg' %}" class="card-img-top" alt="Product 4">
+                <div class="card-body">
+                    <h5 class="card-title">Hope Sticker</h5>
+                    <p class="card-text">Vibrant stickers that spread messages of hope and faith.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="{% static 'shirt5.jpg' %}" class="card-img-top" alt="Product 5">
+                <div class="card-body">
+                    <h5 class="card-title">Prayer Journal</h5>
+                    <p class="card-text">A beautiful journal for reflection and prayer.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="{% static 'shirt4.jpg' %}" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                    <h5 class="card-title">Inspirational Artwork</h5>
+                    <p class="card-text">Unique pieces that reflect spiritual themes and devotion.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 7 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="{% static 'shirt2.jpg' %}" class="card-img-top" alt="Product 7">
+                <div class="card-body">
+                    <h5 class="card-title">Faith Quote Mug</h5>
+                    <p class="card-text">A mug to remind you of your faith with every sip.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 8 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 8">
+                <div class="card-body">
+                    <h5 class="card-title">Scripture Wall Art</h5>
+                    <p class="card-text">Decorate your space with powerful verses and quotes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 9 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 9">
+                <div class="card-body">
+                    <h5 class="card-title">Blessed Cap</h5>
+                    <p class="card-text">Stylish cap with a message of faith.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 10 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 10">
+                <div class="card-body">
+                    <h5 class="card-title">Faith Bracelet</h5>
+                    <p class="card-text">A beautiful bracelet that serves as a reminder of your faith.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
